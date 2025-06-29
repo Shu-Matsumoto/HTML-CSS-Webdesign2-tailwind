@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Philosopher } from "next/font/google";
 import "./globals.css";
+import "./style/components.css";
+import "./style/layouts.css";
 import type { Viewport } from "next";
 
 const geistSans = Geist({
@@ -33,11 +35,7 @@ export default function RootLayout({
   return (
     // suppressHydrationWarning を追加
     <html lang="ja" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

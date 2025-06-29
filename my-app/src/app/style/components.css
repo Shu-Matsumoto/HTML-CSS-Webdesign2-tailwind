@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn {
+    @apply inline-block px-[1.5rem] py-[0.75rem] rounded-[8px] bg-[#0bd] text-[#fff] text-2xl transition duration-500 ease-in-out;
+  }
+  .btn:hover {
+    @apply bg-[#09a];
+  }
+}

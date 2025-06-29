@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer components {
+  .heading-large {
+    @apply text-4xl mb-4 text-center font-[philosopher];
+  }
+  .main-content {
+    @apply max-w-[736] py-0 px-[1.5rem] mt-[10rem] mx-auto mb-0;
+  }
+  .main-content-header {
+    @apply mb-[1rem];
+  }
+  .info {
+    @apply w-full max-w-[544px] m-auto px-[1.5rem] py-0;
+  }
+}
