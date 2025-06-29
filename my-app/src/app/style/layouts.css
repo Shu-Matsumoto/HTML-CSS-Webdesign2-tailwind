@@ -1,16 +1,55 @@
 @import "tailwindcss";
 
 @layer components {
+  .page-title {
+    @apply text-4xl mb-4 text-center font-[philosopher];
+  }
   .heading-large {
     @apply text-4xl mb-4 text-center font-[philosopher];
   }
+  .page-header {
+    @apply flex flex-col;
+  }
+  .main-nav {
+    @apply text-2xl;
+  }
   .main-content {
-    @apply max-w-[736] py-0 px-[1.5rem] mt-[10rem] mx-auto mb-0;
+    @apply max-w-[736] py-0 px-[1.5rem] mt-[3rem] mx-auto mb-0;
   }
   .main-content-header {
     @apply mb-[1rem];
   }
   .info {
     @apply w-full max-w-[544px] m-auto px-[1.5rem] py-0;
+  }
+  .wrapper {
+    @apply max-w-[1120px] mx-auto px-4;
+  }
+  .cover-home {
+    @apply bg-[url(/images/cover-home-l.webp)] z-[-1] bg-cover bg-bottom h-[800px];
+  }
+  .cover-footer {
+    @apply bg-[url(/images/footer-l.webp)] z-[-1] bg-cover bg-top pt-[12rem] pb-[6rem] h-fit;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-title {
+    @apply text-8xl;
+  }
+  .heading-large {
+    @apply text-6xl;
+  }
+  .page-header {
+    @apply flex flex-row justify-between items-center;
+  }
+  .main-nav {
+    @apply text-4xl;
+  }
+  .cover-home {
+    @apply bg-[url(/images/cover-home-s.webp)];
+  }
+  .cover-footer {
+    @apply bg-[url(/images/footer-s.webp)];
   }
 }
